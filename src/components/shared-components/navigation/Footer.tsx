@@ -2,7 +2,7 @@ import { BiDonateHeart } from "react-icons/bi";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="bg-gray-700 text-white rounded-md px-5 py-3 sticky bottom-1 left-0">
+    <div className="bg-gray-700 text-white rounded-md px-5 py-3">
       <div className=" text-white  flex  justify-between gap-2 ">
         <div className="flex flex-col">
           <div className="flex items-center gap-1">
