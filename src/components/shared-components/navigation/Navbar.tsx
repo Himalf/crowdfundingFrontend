@@ -20,7 +20,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center mt-4 bg-primaryColor py-5 px-2 rounded-t-lg sticky top-0 left-0">
+    <div className="flex justify-between items-center mt-4 bg-primaryColor py-5 px-2 rounded-t-lg sticky top-1 left-0 z-50 ">
       <div className="flex gap-2 items-center">
         <h1 className="text-3xl font-bold cursor-pointer flex items-center gap-1 ">
           <span className="text-secondaryColor">

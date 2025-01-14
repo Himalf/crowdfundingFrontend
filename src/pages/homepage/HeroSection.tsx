@@ -7,11 +7,11 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import Donation1 from "@/assets/donate3.png";
-import Donation2 from "@/assets/donate4.png";
-import Donation3 from "@/assets/donate5.png";
-import Donation4 from "@/assets/donate6.png";
-import Donation5 from "@/assets/donate7.png";
+import Donation1 from "@/assets/donate6.png";
+import Donation2 from "@/assets/donation8.png";
+import Donation3 from "@/assets/donate6.png";
+import Donation4 from "@/assets/donation9.png";
+import Donation5 from "@/assets/donate6.png";
 
 const HeroSection = () => {
   const heroImage = [
@@ -32,23 +32,23 @@ const HeroSection = () => {
     },
   ];
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false })
+    Autoplay({ delay: 3000, stopOnInteraction: false }),
   );
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-[70%] items-center mx-auto"
+      className="w-full max-w-[100%] items-center mx-auto"
     >
       <CarouselContent>
         {heroImage.map((val, i) => (
           <CarouselItem key={i}>
             <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-video items-center justify-center p-9">
+              <Card className="rounded-lg">
+                <CardContent className="max-h-[35rem] min-h-[35rem] mx-auto flex items-center justify-center p-9">
                   <img
                     src={val.name}
                     alt="hero images"
-                    className="h-full w-full object-contain"
+                    className="w-[70%] h-fit p-10 object-contain rounded-lg"
                   />
                 </CardContent>
               </Card>

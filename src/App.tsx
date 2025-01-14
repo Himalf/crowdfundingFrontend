@@ -3,7 +3,7 @@ import MainLayout from "./layout/MainLayout";
 import Homepage from "./pages/homepage";
 function App() {
   return (
-    <main className="mx-[10%]">
+    <main className="mx-[5%]">
       <Router>
         <MainLayout>
           <Routes>
