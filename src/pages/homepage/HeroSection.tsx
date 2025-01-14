@@ -56,8 +56,6 @@ const HeroSection = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      {/* <CarouselPrevious />
-      <CarouselNext /> */}
     </Carousel>
   );
 };
