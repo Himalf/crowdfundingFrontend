@@ -37,7 +37,7 @@ const HeroSection = () => {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-[100%] items-center mx-auto"
+      className="w-full  items-center mx-auto"
     >
       <CarouselContent>
         {heroImage.map((val, i) => (
