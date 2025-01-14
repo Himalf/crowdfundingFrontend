@@ -6,8 +6,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  //   CarouselNext,
+  //   CarouselPrevious,
 } from "@/components/ui/carousel";
 
 const HeroSection = () => {
@@ -15,13 +15,16 @@ const HeroSection = () => {
     Autoplay({ delay: 2000, stopOnInteraction: false })
   );
   return (
-    <Carousel plugins={[plugin.current]} className="w-full max-w-xs">
+    <Carousel
+      plugins={[plugin.current]}
+      className="w-full max-w-[70%] items-center mx-auto"
+    >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
+                <CardContent className="flex aspect-video items-center justify-center p-6">
                   <span className="text-4xl font-semibold">{index + 1}</span>
                 </CardContent>
               </Card>
@@ -29,8 +32,8 @@ const HeroSection = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious />
+      <CarouselNext /> */}
     </Carousel>
   );
 };
